@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# DailyWeather App ☀️🌧️🌎
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DailyWeather is a user-friendly application that provides current weather conditions and a 5-day forecast for cities worldwide. With features like an intelligent autocomplete search bar, geolocation support, and detailed weather reports, this app makes staying informed about the weather simple and seamless.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Table of Contents** 📋
 
-### `npm start`
+1. [Overview](#overview)
+2. [Features](#features)
+   - [Autocomplete Search Bar](#autocomplete-search-bar)
+   - [Current Location Feature](#current-location-feature)
+   - [Current Weather Display](#current-weather-display)
+   - [5-Day Weather Forecast](#5-day-weather-forecast)
+   - [Navigation](#navigation)
+3. [How to Use](#how-to-use)
+4. [Screenshots Overview 🖼](#screenshots-overview-)
+5. [Tech Stack 🛠](#tech-stack-)
+6. [How to Run the App 🚀](#how-to-run-the-app-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Overview**
+The DailyWeather app offers a seamless way to search for current weather conditions and access a 5-day weather forecast for cities worldwide. With intuitive navigation and comprehensive weather details, it ensures users can find and view weather information effortlessly.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Features**
 
-### `npm run build`
+### **Autocomplete Search Bar**
+- A dynamic search bar suggests city names as the user types, ensuring accurate and quick searches without needing exact spelling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Current Location Feature**
+- The app includes a geolocation button that allows users to fetch weather data for their current location with ease.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Current Weather Display**
+- Displays detailed weather information, including:
+  - City name with a weather condition image.
+  - Current temperature and weather conditions.
+  - Visibility, wind speed, pressure, and humidity.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **5-Day Weather Forecast**
+- Accessible via the "5 Day Forecast" button from the current weather page.
+- Provides a detailed day-by-day breakdown of the weather.
 
-### `npm run eject`
+### **Navigation**
+- The **DW app logo** acts as a home button, quickly returning users to the homepage.
+- The search bar, available on multiple pages, allows users to navigate directly to weather reports for other cities.
+- A dedicated **back button** in the 5-day forecast view navigates back to the current weather page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **How to Use**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Initiating a Search**:
+   - Type the city name into the search bar on the homepage.
+   - Use the autocomplete feature for quick suggestions.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Accessing Current Weather**:
+   - Click a suggestion from the autocomplete list or press "Search" to view the current weather for the selected city.
 
-## Learn More
+3. **Using Current Location**:
+   - Click the **Current Location** button on the homepage.
+   - Accept the location prompt to display the weather for your current area.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Exploring Weather Details**:
+   - Use the **"5 Day Forecast"** button to access extended weather information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. **Navigating Through the App**:
+   - Click the **DW app logo** to return to the homepage.
+   - Use the back button in the 5-day forecast view to return to the last searched city's weather details.
 
-### Code Splitting
+6. **API Key Setup**:
+   - Replace the default `API_KEY` variable in the app by creating a `.env` file in the root directory and adding:
+     ```
+     REACT_APP_API_KEY=your_api_key_here
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## **Screenshots Overview 🖼**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Home Page**
+![Home Page](public/readme-imgs/dailyweatherhome.jpg)
 
-### Making a Progressive Web App
+### **Use Location Feature**
+![Use Location Feature](public/readme-imgs/dailyweathercurrentlocation.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **Search Feature**
+![Search Feature](public/readme-imgs/dailyweathersearch.jpg)
 
-### Advanced Configuration
+### **Current Weather Forecast**
+![Current Weather Forecast](public/readme-imgs/dailyweathercurrentweather.jpg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **5-Day Weather Forecast**
+![5-Day Weather Forecast](public/readme-imgs/dailyweatherfivedaysforecast.jpg)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## **Tech Stack 🛠**
+- **Frontend:** React (Create React App)
+- **API:** [OpenWeatherMap API](https://openweathermap.org/api)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## **How to Run the App 🚀**
+1. Clone the repository:
+- git clone https://github.com/obrito00/WeatherApp
+- cd WeatherApp
+
+2. Install dependencies:
+npm install
+
+3. Obtain the API key from openweathermap.org/api:
+- create the .env file
+- Add: Add: REACT_APP_API_KEY=your_api_key
+
+4. Start the App:
+npm start
